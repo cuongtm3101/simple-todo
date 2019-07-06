@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: Roboto;
+    color: #666;
+}
+
+body {
+    background: linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+input:focus{
+    outline: none;
+}
+.container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.container .main-content .element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container h1 {
+    background-color: #2980b9;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.container #todo-form {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+    
+}
+
+.container #todo-form input[type="text"]{
+    width: 85%;
+    height: auto;
+    background-color: #f7f7f7;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.container #todo-form input[type="submit"]{
+    width: 15%;
+    height: auto;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+}
+
+.container .main-content .element .main-text {
+    padding-left: 15px;
+    width: 100%;
+}
+
+.container .main-content .element .delete-btn {
+    padding-right: 15px;
+    padding-top: 4px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #f15353;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.container .main-content .element:hover .delete-btn {
+    opacity: 1;
+}
+
+.done-task{
+    text-decoration: line-through;
+}
